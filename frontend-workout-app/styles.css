@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    background-image: url('https://media.giphy.com/media/PvMKNlIlQtXEI/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+header {
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Audiowide';
+    font-size: 2rem;
+    color: gold;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 32%;
+    background-color: black;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin-top: 4rem;
+    padding-top: 2rem;
+}
+
+input {
+    margin: 0.5rem 20% 1.5rem 20%;
+    font-size: 1.25rem;
+    font-family: 'Raleway';
+    border-radius: 0.25rem;
+    padding-left: 0.5rem;
+}
+
+h3 {
+    align-self: center;
+    color: gold;
+    font-family: 'Audiowide';
+    font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 60rem;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
+greeting {
+    height: 4rem;
+    font-size: 3rem;
+    font-family: 'Audiowide';
+    margin-top: 4rem;
+}
+
+#login_button {
+    background-color: #333333;
+    font-family: 'Audiowide';
+    color: gold;
+    border-color: gold;
+}
+
+#login_button:hover {
+    transform: scale(1.1);
+}
+
+* {
+    transition-duration: 0.2s;
+}
