@@ -1,18 +1,18 @@
-const loginForm = document.querySelector('#login_form')
-const loginURL = 'http://localhost:4000/login'
-const homeURL = 'http://localhost:3000/home.html'
+const signupForm = document.querySelector('#signup-form')
+const usersURL = 'http://localhost:4000/users'
+const loginURL = 'http://localhost:3000/index.html'
 
-loginForm.addEventListener('submit', () => {
+signupForm.addEventListener('submit', event => {
     event.preventDefault()
-    const formData = new FormData(loginForm)
+    const formData = new FormData(signupForm)
     const username = formData.get('username')
     const password = formData.get('password')
-    fetch(loginURL, {
+    fetch(usersURL, {
         method: "POST",
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
-          },
+        },
         body: JSON.stringify({
             username: username,
             password: password
@@ -20,12 +20,12 @@ loginForm.addEventListener('submit', () => {
     })
         .then(response => response.json())
         .then(result => {
-            if (result.token) {
-                window.location = homeURL;
+            if (result.user.id) {
+                window.location = loginURL;
             }
             else {
-                alert("Incorrect Username and/or Password")
+                signupForm.reset()
+                alert("Invalid username and/or password")   
             }
         })
-    })
-
+})

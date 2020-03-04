@@ -1,3 +1,7 @@
+* {
+    transition-duration: 0.2s;
+}
+
 body {
     margin: 0;
     background-image: url('https://media.giphy.com/media/PvMKNlIlQtXEI/giphy.gif');
@@ -10,10 +14,7 @@ header {
     height: 6rem;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Audiowide';
-    font-size: 2rem;
+    justify-content: space-between;
     color: gold;
     background-color: black;
     padding: 0;
@@ -76,6 +77,41 @@ greeting {
     transform: scale(1.1);
 }
 
-* {
-    transition-duration: 0.2s;
+.signup-button {
+    display: flex;
+    align-self: center;
+    text-decoration: none;
+    font-family: 'Audiowide';
+    color: gold;
+}
+
+.signup-button:hover {
+    transform: scale(1.1);
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-family: 'Audiowide';
+    font-size: 2rem;
+}
+
+.logout {
+    background: none;
+    border: none;
+    color: gold;
+    font-family: 'Audiowide';
+    font-size: 1.2rem;
+    margin: 0 1rem 0 0;
+    width: 6rem;
+}
+
+.logout:hover {
+    transform: scale(1.1);
+}
+
+.header-spacer {
+    width: 6rem;
+    margin-left: 1rem;
 }
