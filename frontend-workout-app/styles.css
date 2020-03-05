@@ -5,7 +5,6 @@
 body {
     margin: 0;
     background-image: url('https://media.giphy.com/media/PvMKNlIlQtXEI/giphy.gif');
-    background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.8;
 }
@@ -21,18 +20,6 @@ header {
     margin: 0;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 32%;
-    background-color: black;
-    border-radius: 1rem;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    margin-top: 4rem;
-    padding-top: 2rem;
-}
-
 input {
     margin: 0.5rem 20% 1.5rem 20%;
     font-size: 1.25rem;
@@ -41,7 +28,16 @@ input {
     padding-left: 0.5rem;
 }
 
-h3 {
+#login-greeting {
+    align-self: center;
+    color: gold;
+    font-family: 'Audiowide';
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#signup-greeting {
     align-self: center;
     color: gold;
     font-family: 'Audiowide';
@@ -71,6 +67,8 @@ greeting {
     font-family: 'Audiowide';
     color: gold;
     border-color: gold;
+    width: 10rem;
+    align-self:center;
 }
 
 #login_button:hover {
@@ -83,6 +81,7 @@ greeting {
     text-decoration: none;
     font-family: 'Audiowide';
     color: gold;
+    margin-bottom: 2rem;
 }
 
 .signup-button:hover {
@@ -105,6 +104,8 @@ greeting {
     font-size: 1.2rem;
     margin: 0 1rem 0 0;
     width: 6rem;
+    text-decoration: none;
+    align-self: center;
 }
 
 .logout:hover {
@@ -114,4 +115,213 @@ greeting {
 .header-spacer {
     width: 6rem;
     margin-left: 1rem;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: gold;
+    background-color: black;
+    font-family: 'Audiowide';
+    font-size: 1.5rem;
+    font-weight: bolder;
+    width: fit-content;
+    height: fit-content;
+    justify-self: center;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+ nav {
+     height: 10%;
+     width: 80%;
+     display: flex;
+     justify-content: space-around;
+     align-self: center;
+     margin-top: 2rem;
+ }
+ .home-main {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+ }
+
+ .home-greeting {
+    display: flex;
+    justify-content: center;
+    color: gold;
+    font-family: 'Audiowide';
+    font-size: 3rem;
+    text-shadow: 4px 4px rgba(0,0,0,0.75)
+ }
+
+ .record-title {
+    font-family: 'Audiowide';
+    font-size: 1.5rem;
+    color: gold;
+    padding: 0 2rem 0 2rem;
+ }
+
+ .record-card {
+     display: flex;
+     align-items: center;
+     align-self: center;
+     margin-top: 0;
+     height: fit-content;
+     width: fit-content;
+     padding: 2rem 0 2rem 0;
+ }
+
+ form {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin-top: 4rem;
+    padding-top: 2rem;
+    height: fit-content;
+}
+
+ .record-button {
+    width: 10rem;
+    margin-bottom: 1rem;
+    background-color: #333333;
+    font-family: 'Audiowide';
+    color: gold;
+    border-color: gold;
+    font-size: 1.2rem;
+    border-radius: 0.25rem;
+
+ }
+
+ #submit-date {
+     width: fit-content;
+ }
+
+#date-input {
+    background-color: #333333;
+    font-family: 'Audiowide';
+    color: gold;
+    border-color: gold;
+    font-size: 1.2rem;
+    border-radius: 0.25rem;
+}
+
+.addButtonsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardio-form {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    align-items: center;
+}
+
+.cardio-form-input {
+    width: fit-content;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.submit-cardio {
+    background-color: #333333;
+    font-family: 'Audiowide';
+    color: gold;
+    border-color: gold;
+    font-size: 1.2rem;
+    border-radius: 0.25rem;
+    width: fit-content;
+}
+
+#login_form form {
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: black;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin-top: 4rem;
+    padding-top: 2rem;
+}
+
+#signup-form {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    
+    flex-direction: column;
+    align-content: center;
+    background-color: black;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+.weight-form {
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+        align-items: center;
+}
+
+.workout-card {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    background-color: black;
+    color: gold;
+    font-family: 'Audiowide';
+    border-radius: 1rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin-top: 2rem;
+    padding: 0rem 2rem 2rem 2rem;
+}
+
+#workout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workout-title {
+    margin: 0.5rem 0 0.5rem 0;
+    align-self: center;
+}
+
+.exercise-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h5 {
+    margin: 0;
+}
+
+h6 {
+    margin: 0.5rem;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+ion-icon {
+    font-size: 24px;
+}
+
+ion-icon:hover {
+    transform: scale(1.1);
 }
