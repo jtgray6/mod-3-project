@@ -26,6 +26,8 @@ loginForm.addEventListener('submit', () => {
             else {
                 alert("Incorrect Username and/or Password")
             }
+            localStorage.setItem("token", result.token)
         })
+
     })
 

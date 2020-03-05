@@ -12,20 +12,23 @@
         <header>
             <div class="header-spacer"></div>
             <logo id="logo"></ion-icon>Liv <ion-icon name="bicycle-outline" size="medium"></ion-icon> Activ</logo>
-            <div class="header-spacer"></div>
+            <a class="logout" href="http://localhost:3000/index.html">Logout</a>
         </header>
-        <main>
-            
-            <form id="login_form">
-                <h3 id="login-greeting">Login and Start Livin!</h3>
-                <input class = "login-input" type="text" placeholder="Username" name="username"/>
-                <input class = "login-input" type="password" placeholder="Password" name="password"/>
-                <input id="login_button" type="submit" value="Login"/>
-                <a class="signup-button" href="http://localhost:3000/signup.html">Click Here to Sign Up!</a>
+        <main class="home-main">
+            <nav>
+                <a class="nav-button" href="http://localhost:3000/record.html">Record Workout</a>
+                <a class="nav-button" href="http://localhost:3000/workouts.html">My Workouts</a>
+                <a class="nav-button" href="http://localhost:3000/progress.html">Progress Tracking</a>   
+            </nav>
+            <form class="record-card">
+                <h3 class="record-title">Record a Workout!</h3>
+                <input id="date-input" type="date" name="date">
+
+                <input class="record-button" id="submit-date" type="submit" value="Enter Date">
             </form>
         </main>
         
-        <script src="index.js" async defer></script>
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <script src="record.js" async defer></script>
     </body>
 </html>
