@@ -77,5 +77,35 @@ fetch(workoutsURL, {
                 }) 
             })
         })
+        const editDate = document.querySelectorAll('#edit-date')
+        editDate.forEach(button => {
+            let workoutID = document.querySelector('#workout-id')
+            const intWorkoutID = parseInt(workoutID.innerText)
+            button.addEventListener('click', event => {
+                button.name = 'checkmark-outline'
+                const workoutTitle = document.querySelector('.workout-title')
+                workoutTitle.innerHTML = `Workout on <form id="new-date-form"><input id="new-date-input" type="date" name="date"><input type="submit" hidden></form>`
+                const newDateForm = document.querySelector('#new-date-form')
+                newDateForm.addEventListener('submit', event => {
+                    event.preventDefault()
+                    
+                    const formData = new FormData(newDateForm)
+                    const newDate = formData.get('date')
+                    workoutTitle.innerHTML = `<ion-icon id="edit-date" name="calendar-outline"></ion-icon> Workout on ${newDate}`
+                    fetch(`${workoutsURL}/${intWorkoutID}`, {
+                        method: 'PATCH',
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json',
+                            'Authorization': `bearer ${token}`
+                        },
+                        body: JSON.stringify({
+                            date: newDate
+                        })
+                    })
+                })
+                
+            })
+        })
 
     })

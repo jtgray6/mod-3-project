@@ -198,7 +198,7 @@ greeting {
      width: fit-content;
  }
 
-#date-input {
+#date-input, #new-date-input {
     background-color: #333333;
     font-family: 'Audiowide';
     color: gold;
@@ -332,4 +332,14 @@ ion-icon {
 ion-icon:hover {
     transform: scale(1.2);
     cursor: pointer;
+}
+
+#new-date-input {
+    margin: 0;
+}
+
+#new-date-form {
+    margin-top: 0.5rem;
+    padding: 0;
+    display: flex;
 }
