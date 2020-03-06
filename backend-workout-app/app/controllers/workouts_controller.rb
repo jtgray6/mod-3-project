@@ -19,7 +19,7 @@ class WorkoutsController < ApplicationController
         @workout = Workout.find(params[:id])
         id = @workout.id
         Cardio.all.each{|cardio| 
-            if cardio.workout_id = id
+            if cardio.workout_id == id
                 cardio.destroy
             end
         }

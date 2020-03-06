@@ -77,11 +77,11 @@ recordCard.addEventListener('submit', event => {
                 const weightForm = document.createElement('form')
                 weightForm.className = "weight-form"
                 weightForm.innerHTML = `
-                    <input type="text" name="name" class="cardio-form-input" placeholder="Description"/>
-                    <input type="integer" name="amount" class="cardio-form-input" placeholder="Weight Amount (lb)"/>
-                    <input type="float" name="sets" class="cardio-form-input" placeholder="Sets (#)"/>
-                    <input type="integer" name="reps" class="cardio-form-input" placeholder="Reps (#)"/>
-                    <input type="submit" class="submit-cardio" value="Submit Weights"/>
+                    <input type="text" name="name" class="weight-form-input" placeholder="Description"/>
+                    <input type="integer" name="amount" class="weight-form-input" placeholder="Weight Amount (lb)"/>
+                    <input type="float" name="sets" class="weight-form-input" placeholder="Sets (#)"/>
+                    <input type="integer" name="reps" class="weight-form-input" placeholder="Reps (#)"/>
+                    <input type="submit" class="submit-weight" value="Submit Weights"/>
                 `
                 addWeight.parentNode.append(weightForm)
                 const submitWeight = document.querySelector('.weight-form')

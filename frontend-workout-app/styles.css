@@ -272,6 +272,22 @@ greeting {
         align-items: center;
 }
 
+.weight-form-input {
+    width: fit-content;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    font-size: 1rem;
+}
+
+.submit-weight {
+    background-color: #333333;
+    font-family: 'Audiowide';
+    color: gold;
+    border-color: gold;
+    font-size: 1.2rem;
+    border-radius: 0.25rem;
+    width: fit-content;
+}
+
 .workout-card {
     display: flex;
     width: fit-content;
