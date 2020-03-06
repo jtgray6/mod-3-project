@@ -110,8 +110,5 @@ recordCard.addEventListener('submit', event => {
                     weightForm.remove()
                 })
             })
-            
-
         })
 })
-

@@ -27,33 +27,33 @@ fetch(workoutsURL, {
             const cardButtons = document.createElement('div')
             cardButtons.className = 'card-buttons'
             cardButtons.innerHTML = `
-                <ion-icon id="delete-workout" name="trash-outline"></ion-icon>
                 <div id="workout-id" hidden>${workoutId}</div>
-                <ion-icon id="edit-workout" name="create-outline"></ion-icon>
+                <ion-icon id="delete-workout" name="trash-outline"></ion-icon>
             `
             workoutCard.append(cardButtons)
             const workoutTitle = document.createElement('h4')
             workoutTitle.className = 'workout-title'
-            workoutTitle.textContent = `Workout on ${workout.date}`
+            workoutTitle.innerHTML = `<ion-icon id="edit-date" name="calendar-outline"></ion-icon> Workout on ${workout.date}`
+            
             workoutCard.append(workoutTitle)
             if (workout.cardios.length > 0) {
                 const cardioTitle = document.createElement('h5')
-                cardioTitle.textContent = 'Cardio'
+                cardioTitle.innerHTML = `Cardio Exercises <ion-icon id="add-cardio-card" name="add-circle-outline"></ion-icon>`
                 cardioContainer.append(cardioTitle)
                 workout.cardios.map(cardio => {
                     const cardioElement = document.createElement('h6')
-                    cardioElement.textContent = `${cardio.name} - ${cardio.duration} minutes - ${cardio.distance} miles - ${cardio.calories} calories`
+                    cardioElement.innerHTML = `<ion-icon id="edit-cardio" name="create-outline"></ion-icon> ${cardio.name} - ${cardio.duration} minutes - ${cardio.distance} miles - ${cardio.calories} calories`
                     cardioContainer.append(cardioElement)
                     workoutCard.append(cardioContainer)
                 })
             }
             if (workout.weights.length > 0) {
                 const weightTitle = document.createElement('h5')
-                weightTitle.textContent = 'Weights'
+                weightTitle.innerHTML = `Weight Training <ion-icon id="add-weight-card" name="add-circle-outline"></ion-icon>`
                 weightContainer.append(weightTitle)
                 workout.weights.map(weight => {
                     const weightElement = document.createElement('h6')
-                    weightElement.textContent = `${weight.name} - ${weight.amount} lbs - ${weight.sets} sets - ${weight.reps} reps`
+                    weightElement.innerHTML = `<ion-icon id="edit-weight" name="create-outline"></ion-icon> ${weight.name} - ${weight.amount} lbs - ${weight.sets} sets - ${weight.reps} reps`
                     weightContainer.append(weightElement)
                     workoutCard.append(weightContainer)
                 })
@@ -77,4 +77,5 @@ fetch(workoutsURL, {
                 }) 
             })
         })
+
     })
