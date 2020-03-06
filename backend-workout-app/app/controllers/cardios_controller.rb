@@ -17,4 +17,17 @@ class CardiosController < ApplicationController
 
         render json: @cardio
     end
+
+    def update
+        @cardio = Cardio.find(params[:id])
+        workout_id = @cardio.workout_id
+        @cardio.update(
+            name: params[:name],
+            duration: params[:duration],
+            distance: params[:distance],
+            calories: params[:calories],
+            workout_id: workout_id
+        )
+        render json: @cardio
+    end
 end
