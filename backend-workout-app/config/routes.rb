@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   post "login", to: "authentication#login"
   resources :cardios, only: [:index, :create]
   resources :weights, only: [:index, :create]
-  resources :workouts, only: [:index, :create, :destroy]
+  resources :workouts, only: [:index, :create, :destroy, :update]
 end

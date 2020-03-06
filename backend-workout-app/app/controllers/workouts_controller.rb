@@ -30,4 +30,11 @@ class WorkoutsController < ApplicationController
         }
         @workout.destroy
     end
+
+    def update
+        @workout = Workout.find(params[:id])
+        @workout.update(
+            date: params[:date]
+        )
+    end
 end
