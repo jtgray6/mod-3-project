@@ -21,8 +21,8 @@ Requirements:
 Download and Install Ruby if you don't have it. This is required for the backend database to work.
 Clone and fork this repository. Navigate to the backend-workout-app folder and run 'ruby s' to start the backend. In a seperate terminal, navigate to the frontend-workout-app folder and run 'lite-server'
 
-Contributor's Guide
+### Contributor's Guide
 Feel free to contribute to this project by forking and cloning the repo.
 
-Feature Walkthrough Video
+### Feature Walkthrough Video
 Will be added after basic debugging
