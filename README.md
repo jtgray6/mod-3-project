@@ -7,13 +7,13 @@ This repo contains both the frontend and backend for Liv Activ, an app designed 
 ## User Stories
 As a user, one should be able to...
 
-Understand the purpose of the app
-Sign Up
-Log In
-Record Workouts
-Workouts can have many cardio/weight exercises
-Exercises can be updated or deleted
-Users can see progress chart on 'Progress' page
+* Understand the purpose of the app
+* Sign Up
+* Log In
+* Record Workouts
+* Workouts can have many cardio/weight exercises
+* Exercises can be updated or deleted
+* Users can see progress chart on 'Progress' page
 
 ## Installation Instructions
 Requirements:
